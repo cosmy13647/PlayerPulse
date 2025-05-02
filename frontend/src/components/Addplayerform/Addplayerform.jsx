@@ -27,7 +27,8 @@ export const Addplayerform = ({ onAdd }) => {
       userName,
       position,
       userAvg: parseFloat(userAvg),
-      userImg: userImg || getImageUrl('boy.png') // use your utils here
+      userImg: userImg || getImageUrl('boy.png') 
+      
     };
 
     onAdd(newPlayer);
@@ -39,7 +40,7 @@ export const Addplayerform = ({ onAdd }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
+    <form className={styles.form} onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
       <input
         type="text"
         placeholder="Name"
@@ -72,6 +73,7 @@ export const Addplayerform = ({ onAdd }) => {
         type="file"
         accept="image/*"
         onChange={handleImageUpload}
+         capture="environment"
       />
 
       <button type="submit">Add Player</button>

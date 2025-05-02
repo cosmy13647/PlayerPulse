@@ -41,6 +41,7 @@ export const Home = () => {
       console.error('Error saving player:', error);
     }
   };
+ 
 
   return (
     <div>
