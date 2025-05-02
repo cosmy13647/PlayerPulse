@@ -1,0 +1,28 @@
+form{
+    background-color:grey;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+justify-content: center;
+display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    margin:15px;
+    padding: 20px;
+    max-width: 500px;
+   
+}
+form input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+}
+    button {
+        padding: 10px;
+        font-size: 0.95rem;
+        border-radius: 16px;
+        border: none;
+        max-width: 200px;
+      }
